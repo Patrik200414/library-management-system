@@ -1,5 +1,7 @@
 package library.management.model;
 
+import library.management.logger.ConsoleLogger;
+import library.management.logger.Logger;
 import library.management.service.Library;
 import library.management.service.LibraryImpl;
 import org.junit.jupiter.api.Test;
@@ -9,6 +11,8 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
+
+    Logger logger = new ConsoleLogger();
     @Test
     public void checkIfBookRecordWorks(){
         Book book1 = new Book("Harry Potter", "JK. Rowling", 1231231, true);
@@ -53,7 +57,7 @@ class BookTest {
         Book book3 = new Book("Harry Potter", "JK. Rowling", 3, true);
         Book book4 = new Book("Harry Potter", "JK. Rowling", 4, true);
 
-        Library library = new LibraryImpl();
+        Library library = new LibraryImpl(logger);
         library.addBooks(book1,book2,book3,book4);
         library.addMembers(m1);
 
@@ -72,7 +76,7 @@ class BookTest {
         Book book3 = new Book("Harry Potter", "JK. Rowling", 3, true);
         Book book4 = new Book("Harry Potter", "JK. Rowling", 4, true);
 
-        Library library = new LibraryImpl();
+        Library library = new LibraryImpl(logger);
         library.addBooks(book1,book2,book3,book4);
         library.addMembers(m1);
 

@@ -7,7 +7,7 @@ public interface Library {
     void borrowBook(Member member, Book book);
     void returnBook(Member member, Book book);
     void displayBooks();
-    void displayMemberswithBorrowedBooks();
+    void displayMembersWithBorrowedBooks();
     void addBooks(Book... books);
     void addMembers(Member... members);
 }
