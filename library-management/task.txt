@@ -1,0 +1,24 @@
+Task: Library Management System
+
+Design a library management system that includes the following entities:
+
+Book: Represents a book in the library, with attributes such as title, author, ISBN, and availability status.
+
+Member: Represents a library member, with attributes like name, member ID, and a list of borrowed books.
+
+Library: Represents the library itself, with a collection of books and a list of members.
+
+Implement the following functionalities:
+
+A book can be borrowed by a member if it's available, and the member's record is updated.
+A member can return a book, updating the availability status of the book and the member's record.
+Display the list of books in the library and their availability status.
+Display the list of members and the books they have borrowed.
+Ensure that your implementation adheres to SOLID principles:
+
+Single Responsibility Principle (SRP): Each class should have a single responsibility.
+Open/Closed Principle (OCP): The system should be open for extension but closed for modification.
+Liskov Substitution Principle (LSP): Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.
+Interface Segregation Principle (ISP): A class should not be forced to implement interfaces it does not use.
+Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules, but both should depend on abstractions.
+Feel free to use any programming language you are comfortable with. This task will help you practice designing classes, relationships between them, and implementing functionality while keeping the SOLID principles in mind.
